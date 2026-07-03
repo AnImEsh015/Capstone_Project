@@ -21,27 +21,39 @@ A full-stack **Movie Recommendation System** that recommends movies based on con
 
 ### Frontend
 
-* HTML5
-* CSS3
-* JavaScript
+- HTML5
+- Vanilla CSS
+- Vanilla JavaScript
+- Plotly.js
+- Chart.js
+- SVG Maps
+- CSS Animations
+- Fetch API
 
 ### Backend
 
-* FastAPI
-* Python
+- Python 3.13
+- Flask
+- Gunicorn
+- Pandas
+- NumPy
+- Matplotlib
+- WordCloud
 
 ### Machine Learning
 
-* Pandas
-* NumPy
-* Scikit-learn
-* Cosine Similarity
-* Pickle
+- Scikit-learn
+- Random Forest Regressor
+- Cosine Similarity
+- StandardScaler
+- OrdinalEncoder
+- OneHotEncoder
+- Log Transformation
+- NLP Tokenization
 
 ### Deployment
 
-* **Frontend:** Vercel
-* **Backend:** Render
+ - Render
 
 ---
 
