@@ -1,0 +1,579 @@
+{
+  "states": [
+    {
+      "id": "andhra-pradesh",
+      "name": "Andhra Pradesh",
+      "abbreviation": "AP",
+      "cities": [
+        { "name": "Visakhapatnam", "active": false },
+        { "name": "Vijayawada", "active": false },
+        { "name": "Guntur", "active": false },
+        { "name": "Nellore", "active": false },
+        { "name": "Kurnool", "active": false },
+        { "name": "Kakinada", "active": false },
+        { "name": "Rajahmundry", "active": false },
+        { "name": "Tirupati", "active": false },
+        { "name": "Kadapa", "active": false },
+        { "name": "Anantapur", "active": false }
+      ]
+    },
+    {
+      "id": "arunachal-pradesh",
+      "name": "Arunachal Pradesh",
+      "abbreviation": "AR",
+      "cities": [
+        { "name": "Itanagar", "active": false },
+        { "name": "Naharlagun", "active": false },
+        { "name": "Pasighat", "active": false },
+        { "name": "Tawang", "active": false },
+        { "name": "Ziro", "active": false },
+        { "name": "Bomdila", "active": false },
+        { "name": "Along", "active": false },
+        { "name": "Tezu", "active": false },
+        { "name": "Roing", "active": false },
+        { "name": "Daporijo", "active": false }
+      ]
+    },
+    {
+      "id": "assam",
+      "name": "Assam",
+      "abbreviation": "AS",
+      "cities": [
+        { "name": "Guwahati", "active": false },
+        { "name": "Silchar", "active": false },
+        { "name": "Dibrugarh", "active": false },
+        { "name": "Jorhat", "active": false },
+        { "name": "Nagaon", "active": false },
+        { "name": "Tinsukia", "active": false },
+        { "name": "Tezpur", "active": false },
+        { "name": "Bongaigaon", "active": false },
+        { "name": "Karimganj", "active": false },
+        { "name": "Sivasagar", "active": false }
+      ]
+    },
+    {
+      "id": "bihar",
+      "name": "Bihar",
+      "abbreviation": "BR",
+      "cities": [
+        { "name": "Patna", "active": false },
+        { "name": "Gaya", "active": false },
+        { "name": "Bhagalpur", "active": false },
+        { "name": "Muzaffarpur", "active": false },
+        { "name": "Darbhanga", "active": false },
+        { "name": "Purnia", "active": false },
+        { "name": "Arrah", "active": false },
+        { "name": "Begusarai", "active": false },
+        { "name": "Katihar", "active": false },
+        { "name": "Munger", "active": false }
+      ]
+    },
+    {
+      "id": "chhattisgarh",
+      "name": "Chhattisgarh",
+      "abbreviation": "CG",
+      "cities": [
+        { "name": "Raipur", "active": false },
+        { "name": "Bhilai", "active": false },
+        { "name": "Bilaspur", "active": false },
+        { "name": "Korba", "active": false },
+        { "name": "Durg", "active": false },
+        { "name": "Rajnandgaon", "active": false },
+        { "name": "Raigarh", "active": false },
+        { "name": "Jagdalpur", "active": false },
+        { "name": "Ambikapur", "active": false },
+        { "name": "Chirmiri", "active": false }
+      ]
+    },
+    {
+      "id": "goa",
+      "name": "Goa",
+      "abbreviation": "GA",
+      "cities": [
+        { "name": "Panaji", "active": false },
+        { "name": "Margao", "active": false },
+        { "name": "Vasco da Gama", "active": false },
+        { "name": "Mapusa", "active": false },
+        { "name": "Ponda", "active": false },
+        { "name": "Bicholim", "active": false },
+        { "name": "Curchorem", "active": false },
+        { "name": "Sanquelim", "active": false },
+        { "name": "Canacona", "active": false },
+        { "name": "Quepem", "active": false }
+      ]
+    },
+    {
+      "id": "gujarat",
+      "name": "Gujarat",
+      "abbreviation": "GJ",
+      "cities": [
+        { "name": "Ahmedabad", "active": false },
+        { "name": "Surat", "active": false },
+        { "name": "Vadodara", "active": false },
+        { "name": "Rajkot", "active": false },
+        { "name": "Bhavnagar", "active": false },
+        { "name": "Jamnagar", "active": false },
+        { "name": "Junagadh", "active": false },
+        { "name": "Gandhinagar", "active": false },
+        { "name": "Anand", "active": false },
+        { "name": "Nadiad", "active": false }
+      ]
+    },
+    {
+      "id": "haryana",
+      "name": "Haryana",
+      "abbreviation": "HR",
+      "cities": [
+        { "name": "Gurgaon", "active": true },
+        { "name": "Faridabad", "active": false },
+        { "name": "Panipat", "active": false },
+        { "name": "Ambala", "active": false },
+        { "name": "Karnal", "active": false },
+        { "name": "Sonipat", "active": false },
+        { "name": "Hisar", "active": false },
+        { "name": "Rohtak", "active": false },
+        { "name": "Yamunanagar", "active": false },
+        { "name": "Panchkula", "active": false }
+      ]
+    },
+    {
+      "id": "himachal-pradesh",
+      "name": "Himachal Pradesh",
+      "abbreviation": "HP",
+      "cities": [
+        { "name": "Shimla", "active": false },
+        { "name": "Dharamshala", "active": false },
+        { "name": "Mandi", "active": false },
+        { "name": "Solan", "active": false },
+        { "name": "Kullu", "active": false },
+        { "name": "Hamirpur", "active": false },
+        { "name": "Bilaspur", "active": false },
+        { "name": "Nahan", "active": false },
+        { "name": "Chamba", "active": false },
+        { "name": "Una", "active": false }
+      ]
+    },
+    {
+      "id": "jharkhand",
+      "name": "Jharkhand",
+      "abbreviation": "JH",
+      "cities": [
+        { "name": "Ranchi", "active": false },
+        { "name": "Jamshedpur", "active": false },
+        { "name": "Dhanbad", "active": false },
+        { "name": "Bokaro", "active": false },
+        { "name": "Deoghar", "active": false },
+        { "name": "Hazaribagh", "active": false },
+        { "name": "Giridih", "active": false },
+        { "name": "Ramgarh", "active": false },
+        { "name": "Phusro", "active": false },
+        { "name": "Medininagar", "active": false }
+      ]
+    },
+    {
+      "id": "karnataka",
+      "name": "Karnataka",
+      "abbreviation": "KA",
+      "cities": [
+        { "name": "Bengaluru", "active": false },
+        { "name": "Mysuru", "active": false },
+        { "name": "Mangaluru", "active": false },
+        { "name": "Hubli", "active": false },
+        { "name": "Belgaum", "active": false },
+        { "name": "Dharwad", "active": false },
+        { "name": "Gulbarga", "active": false },
+        { "name": "Shimoga", "active": false },
+        { "name": "Tumkur", "active": false },
+        { "name": "Davangere", "active": false }
+      ]
+    },
+    {
+      "id": "kerala",
+      "name": "Kerala",
+      "abbreviation": "KL",
+      "cities": [
+        { "name": "Thiruvananthapuram", "active": false },
+        { "name": "Kochi", "active": false },
+        { "name": "Kozhikode", "active": false },
+        { "name": "Thrissur", "active": false },
+        { "name": "Kollam", "active": false },
+        { "name": "Kannur", "active": false },
+        { "name": "Alappuzha", "active": false },
+        { "name": "Palakkad", "active": false },
+        { "name": "Malappuram", "active": false },
+        { "name": "Kottayam", "active": false }
+      ]
+    },
+    {
+      "id": "madhya-pradesh",
+      "name": "Madhya Pradesh",
+      "abbreviation": "MP",
+      "cities": [
+        { "name": "Bhopal", "active": false },
+        { "name": "Indore", "active": false },
+        { "name": "Jabalpur", "active": false },
+        { "name": "Gwalior", "active": false },
+        { "name": "Ujjain", "active": false },
+        { "name": "Sagar", "active": false },
+        { "name": "Dewas", "active": false },
+        { "name": "Satna", "active": false },
+        { "name": "Ratlam", "active": false },
+        { "name": "Rewa", "active": false }
+      ]
+    },
+    {
+      "id": "maharashtra",
+      "name": "Maharashtra",
+      "abbreviation": "MH",
+      "cities": [
+        { "name": "Mumbai", "active": false },
+        { "name": "Pune", "active": false },
+        { "name": "Nagpur", "active": false },
+        { "name": "Nashik", "active": false },
+        { "name": "Aurangabad", "active": false },
+        { "name": "Solapur", "active": false },
+        { "name": "Thane", "active": false },
+        { "name": "Kolhapur", "active": false },
+        { "name": "Sangli", "active": false },
+        { "name": "Navi Mumbai", "active": false }
+      ]
+    },
+    {
+      "id": "manipur",
+      "name": "Manipur",
+      "abbreviation": "MN",
+      "cities": [
+        { "name": "Imphal", "active": false },
+        { "name": "Thoubal", "active": false },
+        { "name": "Bishnupur", "active": false },
+        { "name": "Churachandpur", "active": false },
+        { "name": "Kakching", "active": false },
+        { "name": "Ukhrul", "active": false },
+        { "name": "Senapati", "active": false },
+        { "name": "Chandel", "active": false },
+        { "name": "Tamenglong", "active": false },
+        { "name": "Jiribam", "active": false }
+      ]
+    },
+    {
+      "id": "meghalaya",
+      "name": "Meghalaya",
+      "abbreviation": "ML",
+      "cities": [
+        { "name": "Shillong", "active": false },
+        { "name": "Tura", "active": false },
+        { "name": "Jowai", "active": false },
+        { "name": "Nongstoin", "active": false },
+        { "name": "Williamnagar", "active": false },
+        { "name": "Baghmara", "active": false },
+        { "name": "Resubelpara", "active": false },
+        { "name": "Mairang", "active": false },
+        { "name": "Nongpoh", "active": false },
+        { "name": "Cherrapunji", "active": false }
+      ]
+    },
+    {
+      "id": "mizoram",
+      "name": "Mizoram",
+      "abbreviation": "MZ",
+      "cities": [
+        { "name": "Aizawl", "active": false },
+        { "name": "Lunglei", "active": false },
+        { "name": "Champhai", "active": false },
+        { "name": "Serchhip", "active": false },
+        { "name": "Kolasib", "active": false },
+        { "name": "Lawngtlai", "active": false },
+        { "name": "Saiha", "active": false },
+        { "name": "Mamit", "active": false },
+        { "name": "Khawzawl", "active": false },
+        { "name": "Hnahthial", "active": false }
+      ]
+    },
+    {
+      "id": "nagaland",
+      "name": "Nagaland",
+      "abbreviation": "NL",
+      "cities": [
+        { "name": "Kohima", "active": false },
+        { "name": "Dimapur", "active": false },
+        { "name": "Mokokchung", "active": false },
+        { "name": "Tuensang", "active": false },
+        { "name": "Wokha", "active": false },
+        { "name": "Zunheboto", "active": false },
+        { "name": "Mon", "active": false },
+        { "name": "Phek", "active": false },
+        { "name": "Longleng", "active": false },
+        { "name": "Kiphire", "active": false }
+      ]
+    },
+    {
+      "id": "odisha",
+      "name": "Odisha",
+      "abbreviation": "OD",
+      "cities": [
+        { "name": "Bhubaneswar", "active": false },
+        { "name": "Cuttack", "active": false },
+        { "name": "Rourkela", "active": false },
+        { "name": "Berhampur", "active": false },
+        { "name": "Sambalpur", "active": false },
+        { "name": "Puri", "active": false },
+        { "name": "Balasore", "active": false },
+        { "name": "Baripada", "active": false },
+        { "name": "Bhadrak", "active": false },
+        { "name": "Jharsuguda", "active": false }
+      ]
+    },
+    {
+      "id": "punjab",
+      "name": "Punjab",
+      "abbreviation": "PB",
+      "cities": [
+        { "name": "Ludhiana", "active": false },
+        { "name": "Amritsar", "active": false },
+        { "name": "Jalandhar", "active": false },
+        { "name": "Patiala", "active": false },
+        { "name": "Bathinda", "active": false },
+        { "name": "Mohali", "active": false },
+        { "name": "Pathankot", "active": false },
+        { "name": "Hoshiarpur", "active": false },
+        { "name": "Batala", "active": false },
+        { "name": "Moga", "active": false }
+      ]
+    },
+    {
+      "id": "rajasthan",
+      "name": "Rajasthan",
+      "abbreviation": "RJ",
+      "cities": [
+        { "name": "Jaipur", "active": false },
+        { "name": "Jodhpur", "active": false },
+        { "name": "Udaipur", "active": false },
+        { "name": "Kota", "active": false },
+        { "name": "Ajmer", "active": false },
+        { "name": "Bikaner", "active": false },
+        { "name": "Bhilwara", "active": false },
+        { "name": "Alwar", "active": false },
+        { "name": "Sikar", "active": false },
+        { "name": "Bharatpur", "active": false }
+      ]
+    },
+    {
+      "id": "sikkim",
+      "name": "Sikkim",
+      "abbreviation": "SK",
+      "cities": [
+        { "name": "Gangtok", "active": false },
+        { "name": "Namchi", "active": false },
+        { "name": "Gyalshing", "active": false },
+        { "name": "Mangan", "active": false },
+        { "name": "Rangpo", "active": false },
+        { "name": "Singtam", "active": false },
+        { "name": "Jorethang", "active": false },
+        { "name": "Ravangla", "active": false },
+        { "name": "Soreng", "active": false },
+        { "name": "Pakyong", "active": false }
+      ]
+    },
+    {
+      "id": "tamil-nadu",
+      "name": "Tamil Nadu",
+      "abbreviation": "TN",
+      "cities": [
+        { "name": "Chennai", "active": false },
+        { "name": "Coimbatore", "active": false },
+        { "name": "Madurai", "active": false },
+        { "name": "Tiruchirappalli", "active": false },
+        { "name": "Salem", "active": false },
+        { "name": "Tirunelveli", "active": false },
+        { "name": "Erode", "active": false },
+        { "name": "Vellore", "active": false },
+        { "name": "Thoothukudi", "active": false },
+        { "name": "Dindigul", "active": false }
+      ]
+    },
+    {
+      "id": "telangana",
+      "name": "Telangana",
+      "abbreviation": "TS",
+      "cities": [
+        { "name": "Hyderabad", "active": false },
+        { "name": "Warangal", "active": false },
+        { "name": "Nizamabad", "active": false },
+        { "name": "Karimnagar", "active": false },
+        { "name": "Khammam", "active": false },
+        { "name": "Ramagundam", "active": false },
+        { "name": "Mahbubnagar", "active": false },
+        { "name": "Nalgonda", "active": false },
+        { "name": "Adilabad", "active": false },
+        { "name": "Suryapet", "active": false }
+      ]
+    },
+    {
+      "id": "tripura",
+      "name": "Tripura",
+      "abbreviation": "TR",
+      "cities": [
+        { "name": "Agartala", "active": false },
+        { "name": "Udaipur", "active": false },
+        { "name": "Dharmanagar", "active": false },
+        { "name": "Kailashahar", "active": false },
+        { "name": "Belonia", "active": false },
+        { "name": "Khowai", "active": false },
+        { "name": "Teliamura", "active": false },
+        { "name": "Ambassa", "active": false },
+        { "name": "Sabroom", "active": false },
+        { "name": "Sonamura", "active": false }
+      ]
+    },
+    {
+      "id": "uttar-pradesh",
+      "name": "Uttar Pradesh",
+      "abbreviation": "UP",
+      "cities": [
+        { "name": "Lucknow", "active": false },
+        { "name": "Kanpur", "active": false },
+        { "name": "Agra", "active": false },
+        { "name": "Varanasi", "active": false },
+        { "name": "Meerut", "active": false },
+        { "name": "Prayagraj", "active": false },
+        { "name": "Ghaziabad", "active": false },
+        { "name": "Noida", "active": false },
+        { "name": "Bareilly", "active": false },
+        { "name": "Aligarh", "active": false }
+      ]
+    },
+    {
+      "id": "uttarakhand",
+      "name": "Uttarakhand",
+      "abbreviation": "UK",
+      "cities": [
+        { "name": "Dehradun", "active": false },
+        { "name": "Haridwar", "active": false },
+        { "name": "Haldwani", "active": false },
+        { "name": "Roorkee", "active": false },
+        { "name": "Rudrapur", "active": false },
+        { "name": "Kashipur", "active": false },
+        { "name": "Rishikesh", "active": false },
+        { "name": "Pithoragarh", "active": false },
+        { "name": "Ramnagar", "active": false },
+        { "name": "Kotdwar", "active": false }
+      ]
+    },
+    {
+      "id": "west-bengal",
+      "name": "West Bengal",
+      "abbreviation": "WB",
+      "cities": [
+        { "name": "Kolkata", "active": false },
+        { "name": "Howrah", "active": false },
+        { "name": "Durgapur", "active": false },
+        { "name": "Asansol", "active": false },
+        { "name": "Siliguri", "active": false },
+        { "name": "Bardhaman", "active": false },
+        { "name": "Malda", "active": false },
+        { "name": "Baharampur", "active": false },
+        { "name": "Habra", "active": false },
+        { "name": "Kharagpur", "active": false }
+      ]
+    },
+    {
+      "id": "andaman-nicobar",
+      "name": "Andaman and Nicobar Islands",
+      "abbreviation": "AN",
+      "cities": [
+        { "name": "Port Blair", "active": false },
+        { "name": "Havelock Island", "active": false },
+        { "name": "Neil Island", "active": false },
+        { "name": "Diglipur", "active": false },
+        { "name": "Rangat", "active": false },
+        { "name": "Mayabunder", "active": false },
+        { "name": "Car Nicobar", "active": false },
+        { "name": "Campbell Bay", "active": false }
+      ]
+    },
+    {
+      "id": "chandigarh",
+      "name": "Chandigarh",
+      "abbreviation": "CH",
+      "cities": [
+        { "name": "Chandigarh", "active": false }
+      ]
+    },
+    {
+      "id": "dadra-nagar-haveli",
+      "name": "Dadra and Nagar Haveli and Daman and Diu",
+      "abbreviation": "DN",
+      "cities": [
+        { "name": "Silvassa", "active": false },
+        { "name": "Daman", "active": false },
+        { "name": "Diu", "active": false }
+      ]
+    },
+    {
+      "id": "delhi",
+      "name": "Delhi",
+      "abbreviation": "DL",
+      "cities": [
+        { "name": "New Delhi", "active": false },
+        { "name": "South Delhi", "active": false },
+        { "name": "Dwarka", "active": false },
+        { "name": "Rohini", "active": false },
+        { "name": "Saket", "active": false },
+        { "name": "Lajpat Nagar", "active": false },
+        { "name": "Connaught Place", "active": false },
+        { "name": "Karol Bagh", "active": false },
+        { "name": "Janakpuri", "active": false },
+        { "name": "Pitampura", "active": false }
+      ]
+    },
+    {
+      "id": "jammu-kashmir",
+      "name": "Jammu and Kashmir",
+      "abbreviation": "JK",
+      "cities": [
+        { "name": "Srinagar", "active": false },
+        { "name": "Jammu", "active": false },
+        { "name": "Anantnag", "active": false },
+        { "name": "Baramulla", "active": false },
+        { "name": "Sopore", "active": false },
+        { "name": "Kathua", "active": false },
+        { "name": "Udhampur", "active": false },
+        { "name": "Kupwara", "active": false },
+        { "name": "Pulwama", "active": false },
+        { "name": "Rajouri", "active": false }
+      ]
+    },
+    {
+      "id": "ladakh",
+      "name": "Ladakh",
+      "abbreviation": "LA",
+      "cities": [
+        { "name": "Leh", "active": false },
+        { "name": "Kargil", "active": false }
+      ]
+    },
+    {
+      "id": "lakshadweep",
+      "name": "Lakshadweep",
+      "abbreviation": "LD",
+      "cities": [
+        { "name": "Kavaratti", "active": false },
+        { "name": "Agatti", "active": false },
+        { "name": "Minicoy", "active": false },
+        { "name": "Amini", "active": false },
+        { "name": "Andrott", "active": false }
+      ]
+    },
+    {
+      "id": "puducherry",
+      "name": "Puducherry",
+      "abbreviation": "PY",
+      "cities": [
+        { "name": "Puducherry", "active": false },
+        { "name": "Karaikal", "active": false },
+        { "name": "Mahe", "active": false },
+        { "name": "Yanam", "active": false }
+      ]
+    }
+  ]
+}

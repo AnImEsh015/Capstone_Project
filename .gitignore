@@ -1,0 +1,29 @@
+# Python and environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+.venv
+*.log
+
+# Jupyter Notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Ignore all CSV and PKL data files by default
+*.csv
+*.pkl
+*.xlsx
+
+# ONLY ALLOW specific data and model files required for production
+!pipeline.pkl
+!location_distance.pkl
+!appartments.csv
+!gurgaon_properties_post_feature_selection_v2.csv
+
+# macOS
+.DS_Store

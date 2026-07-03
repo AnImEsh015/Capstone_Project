@@ -1,0 +1,15 @@
+{
+  "sectors": [
+    "dwarka expressway", "gwal pahari", "manesar", "sector 1", "sector 10", "sector 102", "sector 103", "sector 104", "sector 105", "sector 106", "sector 107", "sector 108", "sector 109", "sector 11", "sector 110", "sector 111", "sector 112", "sector 113", "sector 12", "sector 13", "sector 14", "sector 15", "sector 17", "sector 2", "sector 21", "sector 22", "sector 23", "sector 24", "sector 25", "sector 26", "sector 27", "sector 28", "sector 3", "sector 30", "sector 31", "sector 33", "sector 36", "sector 37", "sector 37d", "sector 38", "sector 39", "sector 4", "sector 40", "sector 41", "sector 43", "sector 45", "sector 46", "sector 47", "sector 48", "sector 49", "sector 5", "sector 50", "sector 51", "sector 52", "sector 53", "sector 54", "sector 55", "sector 56", "sector 57", "sector 58", "sector 59", "sector 6", "sector 60", "sector 61", "sector 62", "sector 63", "sector 63a", "sector 65", "sector 66", "sector 67", "sector 67a", "sector 68", "sector 69", "sector 7", "sector 70", "sector 70a", "sector 71", "sector 72", "sector 73", "sector 74", "sector 76", "sector 77", "sector 78", "sector 79", "sector 8", "sector 80", "sector 81", "sector 82", "sector 82a", "sector 83", "sector 84", "sector 85", "sector 86", "sector 88", "sector 88a", "sector 89", "sector 9", "sector 90", "sector 91", "sector 92", "sector 93", "sector 95", "sector 99", "sohna road"
+  ],
+  "features": {
+    "property_type": ["flat", "house"],
+    "bedRoom": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "bathroom": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "balcony": ["0", "1", "2", "3", "3+"],
+    "agePossession": ["New Property", "Relatively New", "Moderately Old", "Old Property", "Under Construction"],
+    "furnishing_type": {"0": "Unfurnished", "1": "Semi-Furnished", "2": "Furnished"},
+    "luxury_category": ["Low", "Medium", "High"],
+    "floor_category": ["Low floor", "Mid floor", "High floor"]
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PropView India — Real Estate Price Prediction</title>
+  <meta name="description" content="Interactive India map for real estate price prediction powered by Machine Learning. Get property price estimates across Indian cities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <nav id="nav-breadcrumb"></nav>
+
+    <section id="map-view" class="view active">
+      <div class="hero-section">
+        <h1 class="hero-title slide-up">PropView India</h1>
+        <p class="hero-subtitle fade-in stagger-1">Explore real estate prices across India powered by Machine Learning. Click on any state to begin.</p>
+      </div>
+      <div id="india-map-container"></div>
+      <div class="map-tooltip" id="map-tooltip"></div>
+    </section>
+
+    <section id="state-view" class="view"></section>
+    <section id="prediction-view" class="view"></section>
+    <section id="analysis-view" class="view"></section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/indiaMap.js?v=4"></script>
+  <script src="js/stateView.js?v=4"></script>
+  <script src="js/predictionForm.js?v=5"></script>
+  <script src="js/analysisView.js?v=1"></script>
+  <script src="js/app.js?v=5"></script>
+</body>
+</html>
