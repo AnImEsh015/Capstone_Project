@@ -24,6 +24,8 @@ venv/
 !location_distance.pkl
 !appartments.csv
 !gurgaon_properties_post_feature_selection_v2.csv
+!lat_long_df.csv
+!WordCloudFinal.csv
 
 # macOS
 .DS_Store

@@ -5,6 +5,12 @@ import pandas as pd
 from flask import Flask, request, jsonify, send_from_directory
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics.pairwise import cosine_similarity
+import base64
+from io import BytesIO
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud
 
 # Initialize Flask app
 app = Flask(__name__, static_folder='website', static_url_path='')
@@ -16,9 +22,11 @@ location_df_normalized = None
 cosine_sim_matrix = None
 appartments_df = None
 analysis_df = None
+lat_long_df = None
+wordcloud_df = None
 
 def load_models():
-    global pipeline, location_df, location_df_normalized, cosine_sim_matrix, appartments_df, analysis_df
+    global pipeline, location_df, location_df_normalized, cosine_sim_matrix, appartments_df, analysis_df, lat_long_df, wordcloud_df
     try:
         print("Loading pipeline.pkl...")
         with open('pipeline.pkl', 'rb') as f:
@@ -44,6 +52,12 @@ def load_models():
         print("Loading gurgaon_properties_post_feature_selection_v2.csv for analysis...")
         if os.path.exists('gurgaon_properties_post_feature_selection_v2.csv'):
             analysis_df = pd.read_csv('gurgaon_properties_post_feature_selection_v2.csv')
+            
+        print("Loading lat_long_df.csv and WordCloudFinal.csv...")
+        if os.path.exists('lat_long_df.csv'):
+            lat_long_df = pd.read_csv('lat_long_df.csv')
+        if os.path.exists('WordCloudFinal.csv'):
+            wordcloud_df = pd.read_csv('WordCloudFinal.csv')
             
         print("All models loaded successfully!")
     except Exception as e:
@@ -229,6 +243,106 @@ def get_analysis():
         })
     except Exception as e:
         print(f"Analysis API error: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/analysis/extended', methods=['GET'])
+def get_extended_analysis():
+    try:
+        if analysis_df is None or lat_long_df is None:
+            return jsonify({'success': False, 'error': 'Extended analysis data not loaded'}), 500
+            
+        # 1. Scatter Mapbox data
+        group_df = lat_long_df.groupby('sector')[['price','built_up_area','latitude','longitude']].mean()
+        mapbox_data = {
+            'lat': group_df['latitude'].tolist(),
+            'lon': group_df['longitude'].tolist(),
+            'price': group_df['price'].tolist(),
+            'built_up_area': group_df['built_up_area'].tolist(),
+            'text': group_df.index.tolist()
+        }
+        
+        # 2. BHK Box plot data (bedRoom <= 4)
+        box_df = analysis_df[analysis_df['bedRoom'] <= 4]
+        # We will return list of objects {bedroom: [prices...]}
+        box_data = {}
+        for b in sorted(box_df['bedRoom'].unique()):
+            box_data[int(b)] = box_df[box_df['bedRoom'] == b]['price'].tolist()
+            
+        # 3. Distplot data (House vs Flat)
+        house_prices = analysis_df[analysis_df['property_type'] == 'house']['price'].tolist()
+        flat_prices = analysis_df[analysis_df['property_type'] == 'flat']['price'].tolist()
+        dist_data = {
+            'house': house_prices,
+            'flat': flat_prices
+        }
+        
+        # 4. Pie chart data (rooms)
+        rooms_counts = analysis_df['bedRoom'].value_counts()
+        pie_data_overall = {
+            'labels': [str(x) for x in rooms_counts.index.tolist()],
+            'values': rooms_counts.values.tolist()
+        }
+        
+        pie_data_sectors = {}
+        for sector, group in analysis_df.groupby('sector'):
+            scounts = group['bedRoom'].value_counts()
+            pie_data_sectors[sector] = {
+                'labels': [str(x) for x in scounts.index.tolist()],
+                'values': scounts.values.tolist()
+            }
+        
+        # 5. Scatter Area vs Price raw data (for interactive frontend filtering)
+        # To avoid massive payload, we can limit to 1000 items or return all (it's ~3000 rows, which is small enough)
+        scatter_raw = analysis_df[['built_up_area', 'price', 'property_type', 'bedRoom']].to_dict('records')
+        
+        return jsonify({
+            'success': True,
+            'mapbox': mapbox_data,
+            'boxplot': box_data,
+            'distplot': dist_data,
+            'pie_overall': pie_data_overall,
+            'pie_sectors': pie_data_sectors,
+            'scatter': scatter_raw,
+            'sectors': analysis_df['sector'].unique().tolist()
+        })
+    except Exception as e:
+        print(f"Extended Analysis API error: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/wordcloud', methods=['GET'])
+def get_wordcloud():
+    try:
+        sector = request.args.get('sector')
+        if not sector or wordcloud_df is None:
+            return jsonify({'success': False, 'error': 'Missing sector or data'}), 400
+            
+        selected_sector = wordcloud_df[wordcloud_df['sector'] == sector]
+        if selected_sector.empty:
+            return jsonify({'success': False, 'error': 'Sector not found'}), 404
+            
+        text = selected_sector['furnishDetail'].to_string()
+        
+        # Generate word cloud
+        wc = WordCloud(width=800, height=400, background_color='white').generate(text)
+        
+        fig, ax = plt.subplots(figsize=(10, 5))
+        ax.imshow(wc, interpolation='bilinear')
+        ax.axis("off")
+        
+        # Save to BytesIO
+        img = BytesIO()
+        plt.savefig(img, format='png', bbox_inches='tight')
+        plt.close(fig)
+        img.seek(0)
+        
+        img_base64 = base64.b64encode(img.getvalue()).decode('utf-8')
+        
+        return jsonify({
+            'success': True,
+            'image': f'data:image/png;base64,{img_base64}'
+        })
+    except Exception as e:
+        print(f"Wordcloud API error: {e}")
         return jsonify({'success': False, 'error': str(e)}), 500
 
 if __name__ == '__main__':
